@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="includes/custom/css/custom.css" type="text/css">
+
+	<!-- Fonts from Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+  		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<title>Annotations with Alice in Wonderland</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" id="">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#alice-navbar-collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					ANNOTATING ALICE
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="alice-navbar-collapse">
+				<ul class="nav navbar-nav">
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<!-- Text from Alice in Wonderland -->
+		<div class="row">
+			<div class="col-xs-8">
+				<p class="text"></p>
+			</div>
+			<div class="col-xs-4">
+				<div class="well" style="position:fixed;">
+					<h2>
+						Category Totals:
+					</h2>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>
+									Category Name
+								</th>
+								<th>
+									Total
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									PERSON
+								</td>
+								<td id="person-total" class="person">
+
+								</td>
+							</tr>
+							<tr>
+								<td>
+									ORGANIZATION
+								</td>
+								<td id="organization-total" class="organization">
+
+								</td>
+							</tr>
+							<tr>
+								<td>
+									LOCATION
+								</td>
+								<td id="location-total" class="location">
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- Modal -->
+			<div class="modal fade" id="aliceModal" tabindex="-1" role="dialog" aria-labelledby="">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h4 class="modal-title" id="myModalLabel">CATEGORY:
+								<span id="modal-header-category"></span>
+							</h4>
+						</div>
+						<div class="modal-body">
+							<p>
+								<span id="modal-item"></span> has been annotated with category
+								<span id="modal-body-category"></span>
+							</p>
+							<p>Would you like to delete this annotation?</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" id="delete-annotation">Delete</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>
+		window.jQuery || document.write('<script src="includes/vendor/js/jquery-2.1.4.min.js"><\/script>')
+	</script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+	<!-- Custom JS -->
+	<script src="includes/custom/js/script.js"></script>
+
+</body>
+
+</html>

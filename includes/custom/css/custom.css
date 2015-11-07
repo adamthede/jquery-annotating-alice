@@ -1,0 +1,41 @@
+body {
+    padding-top: 70px;
+}
+
+.person {
+    background-color: #9BD1E5;
+}
+
+.location {
+    background-color: #6CAE75;
+}
+
+.organization {
+    background-color: #F5A65B;
+}
+
+#modal-header-category,
+#modal-body-category {
+    padding: 10px;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+}
+
+#person-total,
+#organization-total,
+#location-total {
+    font-weight: bold;
+    text-align: center;
+}
+
+#modal-item {
+    font-weight: bold;
+    text-transform: uppercase;
+}
